@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // zestaw atrybutów. Zmień wartości tych atrybutów, aby zmodyfikować informacje
 // powiązane z zestawem.
 [assembly: AssemblyTitle("caloSharp")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("CA80 serial loader. \r\nhttps://github.com/lskrzypczak/caloSharp. \r\nBased on code from close-to-the-metal by Natasza Biecek http://bienata.waw.pl/")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Łukasz Skrzypczak slk@data.pl")]
 [assembly: AssemblyProduct("caloSharp")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCopyright("Copyright © Łukasz Skrzypczak 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -44,6 +44,8 @@
             this.saveFileHex = new System.Windows.Forms.SaveFileDialog();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.gbCA80 = new System.Windows.Forms.GroupBox();
+            this.bRefreshHex = new System.Windows.Forms.Button();
+            this.bRefreshBinary = new System.Windows.Forms.Button();
             this.bPlayAudio = new System.Windows.Forms.Button();
             this.cBAudioDevices = new System.Windows.Forms.ComboBox();
             this.bExit = new System.Windows.Forms.Button();
@@ -58,8 +60,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.gBHexView = new System.Windows.Forms.GroupBox();
             this.tBHexView = new System.Windows.Forms.TextBox();
-            this.bRefreshBinary = new System.Windows.Forms.Button();
-            this.bRefreshHex = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.gbCA80.SuspendLayout();
@@ -143,6 +143,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // openFileBinary
             // 
@@ -174,6 +175,26 @@
             this.gbCA80.TabIndex = 2;
             this.gbCA80.TabStop = false;
             this.gbCA80.Text = "CA80";
+            // 
+            // bRefreshHex
+            // 
+            this.bRefreshHex.Location = new System.Drawing.Point(104, 48);
+            this.bRefreshHex.Name = "bRefreshHex";
+            this.bRefreshHex.Size = new System.Drawing.Size(81, 23);
+            this.bRefreshHex.TabIndex = 14;
+            this.bRefreshHex.Text = "Refresh";
+            this.bRefreshHex.UseVisualStyleBackColor = true;
+            this.bRefreshHex.Click += new System.EventHandler(this.bRefreshHex_Click);
+            // 
+            // bRefreshBinary
+            // 
+            this.bRefreshBinary.Location = new System.Drawing.Point(104, 19);
+            this.bRefreshBinary.Name = "bRefreshBinary";
+            this.bRefreshBinary.Size = new System.Drawing.Size(81, 23);
+            this.bRefreshBinary.TabIndex = 13;
+            this.bRefreshBinary.Text = "Refresh";
+            this.bRefreshBinary.UseVisualStyleBackColor = true;
+            this.bRefreshBinary.Click += new System.EventHandler(this.bRefreshBinary_Click);
             // 
             // bPlayAudio
             // 
@@ -307,26 +328,6 @@
             this.tBHexView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tBHexView.Size = new System.Drawing.Size(327, 376);
             this.tBHexView.TabIndex = 0;
-            // 
-            // bRefreshBinary
-            // 
-            this.bRefreshBinary.Location = new System.Drawing.Point(104, 19);
-            this.bRefreshBinary.Name = "bRefreshBinary";
-            this.bRefreshBinary.Size = new System.Drawing.Size(81, 23);
-            this.bRefreshBinary.TabIndex = 13;
-            this.bRefreshBinary.Text = "Refresh";
-            this.bRefreshBinary.UseVisualStyleBackColor = true;
-            this.bRefreshBinary.Click += new System.EventHandler(this.bRefreshBinary_Click);
-            // 
-            // bRefreshHex
-            // 
-            this.bRefreshHex.Location = new System.Drawing.Point(104, 48);
-            this.bRefreshHex.Name = "bRefreshHex";
-            this.bRefreshHex.Size = new System.Drawing.Size(81, 23);
-            this.bRefreshHex.TabIndex = 14;
-            this.bRefreshHex.Text = "Refresh";
-            this.bRefreshHex.UseVisualStyleBackColor = true;
-            this.bRefreshHex.Click += new System.EventHandler(this.bRefreshHex_Click);
             // 
             // Form1
             // 

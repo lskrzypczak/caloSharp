@@ -521,5 +521,11 @@ namespace caloSharp
             bRefreshBinary.Enabled = false;
             bRefreshHex.Enabled = true;
         }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutWindow = new AboutBox1();
+            aboutWindow.Show();
+        }
     }
 }
